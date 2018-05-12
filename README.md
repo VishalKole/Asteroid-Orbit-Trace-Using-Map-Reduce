@@ -3,6 +3,8 @@
 
 An asteroid follows an elliptical orbit around the sun. The aphelion is the point in the orbit farthest away from the sun. The perihelion is the point in the orbit closest to the sun. The aphelion distance (AD) is the distance from the sun to the aphelion. The perihelion distance (PD) is the distance from the sun to the perihelion. AD and PD are measured in astronomical units (AUs), where 1 AU is the distance from the earth to the sun, about 93 million miles or 150 million kilometers.
 
+![D](https://www.cs.rit.edu/~ark/fall2017/654/p4/fig01.png)
+
 The [AstDyS-2 web site](http://hamilton.dm.unipi.it/astdys/) maintains a dataset of asteroid orbit data. Each line of the file comprises orbit data for one asteroid. Here is an example:
 ```
 '1'            58000.000000   2.7674093196380953E+00   7.5607320406440415E-02   1.0593216347797092E+01   8.0308878085741753E+01   7.3023722835643468E+01   3.0949408336762878E+02  3.44  0.12  0
