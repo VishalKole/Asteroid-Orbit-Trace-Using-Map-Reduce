@@ -46,14 +46,15 @@ Job 25 finished XXXX time 5776 msec
 ## Software Specification
 
 The program must be run by typing this command line on a cluster:
-
-* java pj2 jar=`<jar>` threads=`<NT>` AstOrbit `<nodes>` `<file>` `<mindist>` `<maxdist>`
-	* `<jar>` is the name of the JAR file containing all of the program's Java class files.
-	* `<NT>` is the number of mapper threads per mapper task; if omitted, the default is 1.
-	* `<nodes>` is a comma-separated list of cluster node names on which to run the analysis. One or more node names must be specified.
-	* `<file>` is the name of the file on each node's local hard disk containing the asteroid orbit data to be analyzed.
-	* `<mindist>` is the minimum distance for the annular region in AU. It must be a double precision floating point number ≥ 0.0.
-	* `<maxdist>` is the maximum distance for the annular region in AU. It must be a double precision floating point number ≥ mindist.
+```
+java pj2 jar=`<jar>` threads=`<NT>` AstOrbit `<nodes>` `<file>` `<mindist>` `<maxdist>`
+```
+* `<jar>` is the name of the JAR file containing all of the program's Java class files.
+* `<NT>` is the number of mapper threads per mapper task; if omitted, the default is 1.
+* `<nodes>` is a comma-separated list of cluster node names on which to run the analysis. One or more node names must be specified.
+* `<file>` is the name of the file on each node's local hard disk containing the asteroid orbit data to be analyzed.
+* `<mindist>` is the minimum distance for the annular region in AU. It must be a double precision floating point number ≥ 0.0.
+* `<maxdist>` is the maximum distance for the annular region in AU. It must be a double precision floating point number ≥ mindist.
 
 #### If the command line does not have the required number of arguments, if any argument is erroneous, or if any other error occurs, the program will print an error message on the console and must exit.
 
